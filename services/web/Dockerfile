@@ -19,5 +19,7 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . /usr/src/app/
 
+
+COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
 # run entrypoint.sh
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]

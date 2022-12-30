@@ -54,3 +54,5 @@ def upload_file():
       <p><input type=file name=file><input type=submit value=Upload>
     </form>
     """
+if __name__ == "__main__":
+    app.run(debug=True)
